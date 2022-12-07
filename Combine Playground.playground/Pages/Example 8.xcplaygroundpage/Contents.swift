@@ -23,7 +23,7 @@ class CoronaItem: Decodable {
 }
 
 var subscribers = Set<AnyCancellable>()
-if let url = URL(string: "https://api.covid19api.com/dayone/country/germany") {
+if let url = URL(string: "https://api.covid19apiX.com/dayone/country/germany") {
     
     URLSession.shared
         .dataTaskPublisher(for: url)

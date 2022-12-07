@@ -10,12 +10,12 @@ import Foundation
 import CoreLocation
 import Combine
 
-protocol LocationSubscriptionDelegate: class {
+protocol LocationSubscriptionDelegate: AnyObject {
     func startLocationUpdate()
     func stopLocationUpdate()
 }
 
-protocol LocationSubscriptionProtocol: class {
+protocol LocationSubscriptionProtocol: AnyObject {
     func sendLocation(location: CLLocation)
     func sendError(error: Error)
 }

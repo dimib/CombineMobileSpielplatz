@@ -20,4 +20,8 @@ for i in 1...200 {
 
 passThrough.send(completion: .finished)
 
+for i in 1100...1200 {
+    passThrough.send(i)
+}
+
 //: [Next](@next)

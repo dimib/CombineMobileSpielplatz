@@ -18,4 +18,9 @@ for i in 1...200 {
     currentValue.value = i
 }
 
+currentValue.send(completion: .finished)
+
+print(currentValue.value)
+
+
 //: [Next](@next)

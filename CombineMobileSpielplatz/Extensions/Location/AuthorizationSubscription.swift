@@ -10,12 +10,12 @@ import Foundation
 import CoreLocation
 import Combine
 
-protocol AuthorizationSubscriptionDelegate: class {
+protocol AuthorizationSubscriptionDelegate: AnyObject {
     func requestAuthorization(type: AuthorizationPublisher.AuthorizationType)
     
 }
 
-protocol AuthorizationSubscriptionProtocol: class {
+protocol AuthorizationSubscriptionProtocol: AnyObject {
     func sendStatus(status: CLAuthorizationStatus)
 }
 
